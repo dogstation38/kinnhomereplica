@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap 4 Website Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+     <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
+    <link href="mainbalcan.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-bg p-3 my-3 mx-auto ">
+
+</div>
+
+<div class="container-bghead p-2 my-2 mx-auto" style="width: 95%; height: 95%;">
+<div class="row">
+ <div class="col" align="left" >   </div>
+  <div class="col" align="center" >  <h1> K i n n home </h1> </div>
+  <div class="col" align="right" >  <form class="form-inline md-form mr-auto mb-4">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-warning btn-rounded btn-sm my-0 waves-effect waves-light" type="submit">Search</button>
+        </form></div>
+</div>
+</div>
+
+
+
+
+<div class="container-bghead p-2 my-2"align="center" style="width: 95%; height: 95%;">
+
+
+
+            <p style=" color: #7c795d; font-family: ‘Trocchi’, serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0; "> Dedication to our work and the desire to make only the most magnificent details for your table for more than 30 years allow us to please you and make every feast something memorable.</p>
+
+            <br>
+ <br>
+<img src="1627837652_14-kartinkin-com-p-krasivie-tarelki-dlya-yedi-yeda-krasivo-fo-17.jpg" width="1400"  >
+</div>
+
+
+
+
+    <div class="container-bg1  p-5 my-6 mx-auto "  style="width: 95%;">
+        <div class="row justify-content-center ">
+            <div class="col my-auto">
+                </div>
+            <div class="col my-auto" align="center" style=" color: #7c795d; font-family: ‘Trocchi’, serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0; " >
+                <p> Subscribe us: </div>
+            <div class="col my-auto justify-content-center">
+
+              </div>
+           </div>
+           <div class="row justify-content-center ">
+ 
+ <table>
+        <tr>
+            <td> Your e-mail: </td>
+            <td><input type="text" name="rno" class="black" id="rno" style="  color: black" /><td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+            	        <br>
+           <input type="button" class="btn btn-light" name="submit" id="submit" value="submit" onClick = "getdetails()" />
+       </td>
+        </tr>
+    </table>
+    <div id="msg"></div>
+
+           </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script>
+function getdetails(){
+    var name = $('#name').val();
+    var rno = $('#rno').val();
+    $.ajax({
+        type: "POST",
+        url: "details.php",
+        data: {fname:name, id:rno}
+    }).done(function( result )
+        {
+            $("#msg").html( "Address " +rno +" is subscribed for promo e-mails");
+            console.log(rno);
+        });
+}
+</script>
+<script src="rendered-js.js" type="text/javascript" id="rendered-js"></script>
+
+
+<br>
+<div id="top"></div>
+
+
+    <div class="container-bg1 p-12 my-12 mx-auto "  style="width: 95%; height: 75%;">
+  
+            <div class="col my-auto justify-content-center" align="center" style=" color: #7c795d; font-family: ‘Trocchi’, serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0; " >
+                Our tradehits </div>
+
+ <section class="gallery">  
+             <div class="row justify-content-center ">
+           <ul>
+      <a href="#" class="close"></a>
+
+      <li>
+        <a class="image" href="#item02">
+          <img src="Shelfie_Horizontal_750x.jpg" alt="Название изображения" width="600" height="311" > 
+        </a>
+      </li>
+      <li>
+        <a class="image" href="#item02">
+          <img src="Shelfie_Horizontal_750x.jpg" alt="Название изображения" width="600" height="311" >
+        </a>
+      </li>
+      <li>
+        <a class="image" href="#item01">
+          <img src="Chicken_Dumplings_750x.jpg" alt="Название изображения" width="400" height="311" >
+        </a>
+      </li>
+     <li>
+        <a class="image" href="#item01">
+          <img src="Chicken_Dumplings_750x.jpg" alt="Название изображения" width="400" height="311" >
+        </a>
+      </li>
+
+    </ul>
+</div>
+
+<div id="item01" class="port">
+  
+    <div class="row">
+      <div class="description">
+        <h1>set #01</h1>
+        <p style=" color: #7c795d; font-family: ‘Source Sans Pro’, sans-serif; font-size: 28px; font-weight: 400; line-height: 32px; margin: 0 0 24px;">Real classic that will serve you the best way.</p>
+      </div>
+                        <div class="col my-auto">
+        <img src="tarelka-luminarc-diwali-light-blue-20sm-3.jpg " width="200px" height="611" alt="">
+      </div>
+    </div>
+
+
+    </div> <!-- / row -->
+  <div id="item02" class="port">
+        <div class="row justify-content-center ">
+            <div class="col my-auto">
+      <div class="description">
+        <h1>set #02</h1>
+        <p style=" color: #7c795d; font-family: ‘Source Sans Pro’, sans-serif; font-size: 28px; font-weight: 400; line-height: 32px; margin: 0 0 24px;">sophistication, nobility, practicality for any most important event.</p>
+      </div>
+            </div>
+                        <div class="col my-auto">
+      <img src="15_K09fsOx.jpg" alt="">
+    </div> <!-- / row -->
+  </div> <!-- / Item 02 -->
+      </div>
+
+</section> <!-- / projects -->
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="rendered-js.js" type="text/javascript" id="rendered-js"></script>
+
+</section>
+
+</div>
+
+<br>
+<div class="container-bgfoot p-5 my-6 mx-auto" style="width: 95%; color: white; font-size: 26px; font-family: ‘Inder’, sans-serif;">
+<div class="row">
+  <div class="col-sm-3"> help <br>  <a href="mailto:ask@kinn.com" style=" color: white"> contact us </a> </div>
+  <div class="col-sm-3">instagram<p> youtube  </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
